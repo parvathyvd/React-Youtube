@@ -6,13 +6,16 @@ import VideoList from './VideoList';
 import './App.css';
 
 
-
-
 class App extends React.Component {
   state = {
     videos : [],
     selectedVideo : null
   }
+
+  componentDidMount() {
+    this.getSearchTerm('cats');
+  }
+
   getSearchTerm = async (term) => {
     console.log(`inside app`, term);
     const result = await youtube.get("search/",{
@@ -22,7 +25,8 @@ class App extends React.Component {
     })
     console.log(result.data.items);
     this.setState({
-      videos : result.data.items
+      videos : result.data.items,
+      selectedVideo: result.data.items[0]
     })
   }
 
