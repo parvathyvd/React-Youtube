@@ -1,0 +1,13 @@
+
+.videoItem{
+    display: flex !important;
+    align-items: center !important;
+    border: 1px solid #d8d8d8;
+    max-width: 500px;
+    cursor: pointer;
+    margin: 0 0 0 20px;
+}
+
+.ui.image.videoImage{
+    max-width: 150px;
+}

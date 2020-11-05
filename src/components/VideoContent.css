@@ -1,0 +1,17 @@
+.videoContent{
+    width: 500px;
+    height: 350px;
+}
+
+.loading{
+    width: 500px;
+    height: 350px;
+    color: white;
+    background-color: lightgray;
+    font-size: 18px;
+    text-align: center;
+}
+
+.loading p{
+    margin: 30px;
+}
